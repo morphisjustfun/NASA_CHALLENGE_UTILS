@@ -1,0 +1,8 @@
+regions.avgTest = Cantidad de pruebas aplicadaw
+regions.positivddad = Por ciento de pruebas que salen postiivas (inversa es negativo)
+regions.poblacion = Cantidad de poblacion
+regions.camasCovid = Porcentaje de camas covid hospitalarias ocupadas el domingo esa semana
+regions.uci = Porcentjae de camas UCI ocpuadas el domingo de esa semana
+
+(Compuesto) Casos confirmados semanales (NUMERO DE personas que dieron positivo en covid en la semana) = regions.incid_100 * regions.poblacion / 100000
+(Compuesto) Muertos semanales (NUMERO DE personas que murieron por covid en la semana) = regions.fall_100 * regions.poblacion / 100000
