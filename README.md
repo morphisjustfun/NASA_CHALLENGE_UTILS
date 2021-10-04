@@ -12,7 +12,7 @@ Open Covid Peru, Waqi and important personal information (previous infection and
 ## Our Novel Model
 Our model is composed by 3 layers: COVID epidemiological context, environmental context and vaccination and reinfection factor.
 
-![logframe](https://github.com/morphisjustfun/NASA_CHALLENGE_UTILS/blob/master/images/readME/MODEL.jpeg)
+![model](https://github.com/morphisjustfun/NASA_CHALLENGE_UTILS/blob/master/images/readME/MODEL.jpeg)
 
 ### Epidemiological layer
 Open Covid Peru offers six real-time epidemiological factors since february 2021:
@@ -37,13 +37,13 @@ To analize the relation between the variables we built heat maps and pairplots i
 
 In the peruvian context the measure of confirmed cases were not rigorous, then to base our model in this variable was not appropiate at all. For that reason we better took a robust variable: confirmedDeaths100k. First of all, the number of reported deaths in a day is unique and there are not duplicated data. Something that would happen with covid tests which can be applied many times in a day for only one person. Second, the number of reported deaths in a day reveals the impact of covid status 14 days ago. As it is known that the time for the covid19 to incubate is 14 days. Third, the 'confirmedDeaths100k' variable has a  significant correlation (R greater than 0.6) with the other variables (confirmedCases100k, appliedTests100k, positivityRate, bedsOccupiedPercentage, bedsUCIOccupiedPercentage) and we noticed that it was the best variable to explain the others in the model. In that sense, it is possible to take into consideration the confirmed deaths for each 100k people variable (*confirmedDeaths100k*) as a basis to make predictions of the risk in the epidemiological layer of the model. 
 
-![logframe](https://github.com/morphisjustfun/NASA_CHALLENGE_UTILS/blob/master/images/readME/amazonasPLOTS.png)
+![amazonasPlot](https://github.com/morphisjustfun/NASA_CHALLENGE_UTILS/blob/master/images/readME/amazonasPLOTS.png)
 
 
 To establish risk scales we contextualized the HHS's (U.S. Department of Health and Human Services) model 
 
 
-![logframe](https://github.com/morphisjustfun/NASA_CHALLENGE_UTILS/blob/master/images/readME/HHS_Criteria.JPG)
+![HHS criteria](https://github.com/morphisjustfun/NASA_CHALLENGE_UTILS/blob/master/images/readME/HHS_Criteria.JPG)
 
 
 Then we obtained the weights of the epidemiological variables through the correlations that they had between confirmedDeaths100k variable with data since February 7th, 2021 (the first day of report in Open Covid Peru) until the day of the user consult. Finally, with the weights of the variable and its risk scales we can obtain a general average of the epidemiological layer.
@@ -127,14 +127,15 @@ Now you are ready to start
 
 ## Project Demo
 
-Our Website and MVP (Apk for download)
-NASAFancy jupyter notebook
+-Our Website [link](https://sites.google.com/utec.edu.pe/eatingthefrog/about)
+-MVP [link](https://drive.google.com/file/d/1VHPxLjN15btq6yDqWv7zH7Z1qHl9zVR0/view?usp=sharing)
+-NASAFancy jupyter notebook [link](./NASAFancy.ipynb)
 
 ## Dataset
 
-OpenCovid-Perú (Database of covid-19 status in peru)
-waqi.info (World Air Pollution: Real-time Air Quality Index)
-OpenAQ (https://openaq.org/#/)
+-OpenCovid-Perú (Database of covid-19 status in peru)
+-waqi.info (World Air Pollution: Real-time Air Quality Index)
+-OpenAQ (https://openaq.org/#/)
 
 ## Future improvements
 
@@ -146,18 +147,18 @@ In light of this, we propose a demographic layer in which, depending on the dail
 
 ## Resources
 
-E. E. Félix-Arellano, A. Schilmann, M. Hurtado-Díaz, J. L. Texcalac-Sangrador, and H. Riojas-Rodríguez, “Revisión rápida: contaminación del aire y morbimortalidad por Covid-19,” salud publica mex, vol. 62, no. 5, pp. 582–589, Sep. 2020.
-M. V. Beusekon,  Apr 12 and 2021, “Previous COVID-19 may cut risk of reinfection 84%,” CIDRAP. https://www.cidrap.umn.edu/news-perspective/2021/04/previous-covid-19-may-cut-risk-reinfection-84 (accessed Oct. 02, 2021).
-M. V. Beusekon, Jul 22 and 2021, “Study: 2 COVID vaccine doses much more effective than 1 against Delta,” CIDRAP. https://www.cidrap.umn.edu/news-perspective/2021/07/study-2-covid-vaccine-doses-much-more-effective-1-against-delta (accessed Oct. 02, 2021).
-M. Rochabrun and R. Liu, “Peru study finds Sinopharm COVID vaccine 50.4% effective against infections,” Reuters, Aug. 13, 2021. Accessed: Oct. 02, 2021. [Online]. Available: https://www.reuters.com/world/americas/peru-study-finds-sinopharm-covid-vaccine-504-effective-against-infections-2021-08-13/
-“Coronavirus: vacunas contra la COVID-19 en el Perú.” https://www.gob.pe/11571-coronavirus-vacunas-contra-la-covid-19-en-el-peru (accessed Oct. 02, 2021).
-“Lo que debe saber sobre la vacuna BNT162b2 de Pfizer-BioNTech contra la COVID-19.” https://www.who.int/es/news-room/feature-stories/detail/who-can-take-the-pfizer-biontech-covid-19--vaccine (accessed Oct. 02, 2021).
-“La vacuna de Oxford/AstraZeneca contra la COVID-19: lo que debe saber.” https://www.who.int/es/news-room/feature-stories/detail/the-oxford-astrazeneca-covid-19-vaccine-what-you-need-to-know (accessed Oct. 02, 2021).
-“Todo lo que se debe saber sobre la vacuna de Sinopharm contra la COVID-19.” https://www.who.int/es/news-room/feature-stories/detail/the-sinopharm-covid-19-vaccine-what-you-need-to-know (accessed Oct. 02, 2021).
+-E. E. Félix-Arellano, A. Schilmann, M. Hurtado-Díaz, J. L. Texcalac-Sangrador, and H. Riojas-Rodríguez, “Revisión rápida: contaminación del aire y morbimortalidad por Covid-19,” salud publica mex, vol. 62, no. 5, pp. 582–589, Sep. 2020.
+-M. V. Beusekon,  Apr 12 and 2021, “Previous COVID-19 may cut risk of reinfection 84%,” CIDRAP. https://www.cidrap.umn.edu/news-perspective/2021/04/previous-covid-19-may-cut-risk-reinfection-84 (accessed Oct. 02, 2021).
+-M. V. Beusekon, Jul 22 and 2021, “Study: 2 COVID vaccine doses much more effective than 1 against Delta,” CIDRAP. https://www.cidrap.umn.edu/news-perspective/2021/07/study-2-covid-vaccine-doses-much-more-effective-1-against-delta (accessed Oct. 02, 2021).
+-M. Rochabrun and R. Liu, “Peru study finds Sinopharm COVID vaccine 50.4% effective against infections,” Reuters, Aug. 13, 2021. Accessed: Oct. 02, 2021. [Online]. Available: https://www.reuters.com/world/americas/peru-study-finds-sinopharm-covid-vaccine-504-effective-against-infections-2021-08-13/
+-“Coronavirus: vacunas contra la COVID-19 en el Perú.” https://www.gob.pe/11571-coronavirus-vacunas-contra-la-covid-19-en-el-peru (accessed Oct. 02, 2021).
+-“Lo que debe saber sobre la vacuna BNT162b2 de Pfizer-BioNTech contra la COVID-19.” https://www.who.int/es/news-room/feature-stories/detail/who-can-take-the-pfizer-biontech-covid-19--vaccine (accessed Oct. 02, 2021).
+-“La vacuna de Oxford/AstraZeneca contra la COVID-19: lo que debe saber.” https://www.who.int/es/news-room/feature-stories/detail/the-oxford-astrazeneca-covid-19-vaccine-what-you-need-to-know (accessed Oct. 02, 2021).
+-“Todo lo que se debe saber sobre la vacuna de Sinopharm contra la COVID-19.” https://www.who.int/es/news-room/feature-stories/detail/the-sinopharm-covid-19-vaccine-what-you-need-to-know (accessed Oct. 02, 2021).
 
 ## Authors
-Mario Rios
-Noemi Ramirez
-Cesar Otárola
-Pedro Toledo
-Jairo Narro
+-Mario Rios
+-Noemi Ramirez
+-Cesar Otárola
+-Pedro Toledo
+-Jairo Narro
