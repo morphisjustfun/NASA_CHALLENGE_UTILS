@@ -140,6 +140,7 @@ OpenAQ (https://openaq.org/#/)
 
 As another implementation in the future, it is proposed to include a new demographic layer in our model. [EO Dashboard](https://eodashboard.org/) offers a report of social mobility rate. Focusing on Peru, we have two [csv files](./mobilityData_NASA_ESA/) with the daily report of this variable during the years 2020 and 2021. Likewise, we recognize a probability of Covid 19 infection depending on the mobility rate in a city.  
 ![Cuadro de probabilidades](./images/probabilitiesTable.png)
+
 [Source](https://www.nature.com/articles/s41598-020-76763-2)
 In light of this, we propose a demographic layer in which, depending on the daily report, we can assign weights to the different areas of social mobility and offer a more precise Covid 19 infection risk factor in our app.
 
