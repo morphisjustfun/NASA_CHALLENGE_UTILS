@@ -15,7 +15,7 @@ Our model is composed by 3 layers: COVID epidemiological context, environmental 
 ![logframe](https://github.com/morphisjustfun/NASA_CHALLENGE_UTILS/blob/master/images/readME/MODEL.jpeg)
 
 ### Epidemiological layer
-Open Covid Peru offers six epidemiological factors:
+Open Covid Peru offers six real-time epidemiological factors since february 2021:
 
 - regions.avgTest = Quantity of applied COVID tests regions.positivity = Quantity of positive results for each one hundred tests. regions.population - Quantity of inhabitants.
 - regions.camasCovid = Percentage of Covid occupied hospital beds until Sunday of this same week.
@@ -23,7 +23,7 @@ Open Covid Peru offers six epidemiological factors:
 - Weekly confirmed cases = Quantity of people with COVID positive results in the week = regions.positiveCases_100 * regions.population / 100000
 - Weekly deaths = Quantity of people with comfirmed COVID deaths in the week = regions.fall_100 * regions.population / 100000
 
-In order to ensure a relative scale, we divided two variables by the population, and renamed Open Covid Peru variables with more descriptive names:
+In order to ensure a relative scale and match the rates proposed by HHS, we divided two variables by the population, and renamed Open Covid Peru variables with more descriptive names:
 
 - confirmedDeaths100k = Quantity of confirmed COVID deaths for each one hundred thousand people.
 - confirmedCases100k = Quantity of positive COVID tests for each one hundred thousand tests.
@@ -32,7 +32,8 @@ In order to ensure a relative scale, we divided two variables by the population,
 - bedsOccupiedPercentage = Percentage of Covid occupied hospital beds until Sunday of this same week.
 - bedsUCIOccupiedPercentage = Percentage of ICU occupied hospital beds until Sunday of this same week.
 
-To analize the relation between the variables we built heat maps and pairplots in a regional context. Even though at the beginning it was planned to take a national approach, the correlations were not significant to make predictions. It is shown in the following picture.
+
+To analize the relation between the variables we built heat maps and pairplots in a regional context. Even though at the beginning it was planned to take a national approach, the correlations did not follow a regular pattern across the different regions.
 
 ![logframe](Imagenes de HeatMap nacioanl)
 
@@ -50,7 +51,7 @@ To establish risk scales we contextualized the HHS's (U.S. Department of Health 
 Then we obtained the weights of the epidemiological variables through the correlations that they had between confirmedDeaths100k variable with data since February 7th, 2021 (the first day of report in Open Covid Peru) until the day of the user consult. Finally, with the weights of the variable and its risk scales we can obtain a general average of the epidemiological layer.
 
 ### Environmental layer
-In the environmental layer we considered data from Waqi website about PM2.5 (µg/m³) and PM10 (µg/m³). Due to the limited data, we considered an average value that would represent air quality in the whole country. Acording to our research there is a correlation between air quality and the probability to get covid19. In the model, if the air quality is bad, then there is high risk to get the virus. Contrary, if it is good there is low risk.
+In the environmental layer we considered real-time data from Waqi website about PM2.5 (µg/m³) and PM10 (µg/m³). Due to the limited data, we considered an average value that would represent air quality in the whole country. Acording to our research there is a correlation between air quality and the probability to get covid19. In the model, if the air quality is poor, then there is high risk to get the virus. Contrary, if it is good there is low risk.
 
 This layer, compared to the previous one, has a model based on past data (since January 25th, 2021 until the date of data adquisition) obtained from Open AQ repository. Again, the next step was to correlate the environmental variables with the *confirmedDeaths100k* variable to assign the respective weights. In this way, we finally obtained a constant layer of the model which will permit to evaluate the risk of the daily environmental variables reported by Waqi.
 
@@ -77,7 +78,7 @@ Second, we found out in a research that if a person got Covid 19 before the prob
  - The app follows the rules of UX and UI design.
  - The app shows recommendations to prevent the Covid 19 depending on the user's risk scale.
  - The app pretends to be translated to quechua, aymara (the languages with the most speakers in the country) and English (a global language for tourists).
- - The use of React Native allows us to be compatible in Android and iOS.
+ - The use of React Native allows us to be compatible with major mobile platforms such as Android and iOS.
  - In the future the app can be replicated in other countries.
 
 ## Main Resources
@@ -89,11 +90,19 @@ Mock up:
 - Google Slides
   
 ### Frontend
+
 - React Native
+- Typescript
+
+[Frontend](https://github.com/morphisjustfun/Nasa-challenge-Frontend)
+
 
 ### Backend
-- Typescript
+
 - Flask
+
+[Backend](https://github.com/morphisjustfun/Nasa-challenge-Backend)
+
 
 ## Technique Requirements
 ### Libraries used
@@ -110,12 +119,18 @@ Mock up:
 11. sklearn
 
 ### Install Libraries
-You need to run pip install "library-name" for each library which is not installed on your device.
+
+In order to install the libraries
+```console
+foo@bar:~$ pip3 install -r requirements.txt
+```
+
 Now you are ready to start
 
 ## Project Demo
 
 Our Website and MVP (Apk for download)
+NASAFancy jupyter notebook
 
 ## Dataset
 
