@@ -127,15 +127,15 @@ Now you are ready to start
 
 ## Project Demo
 
--Our Website [link](https://sites.google.com/utec.edu.pe/eatingthefrog/about)
--MVP [link](https://drive.google.com/file/d/1VHPxLjN15btq6yDqWv7zH7Z1qHl9zVR0/view?usp=sharing)
--NASAFancy jupyter notebook [link](./NASAFancy.ipynb)
+- Our Website [link](https://sites.google.com/utec.edu.pe/eatingthefrog/about)
+- MVP [link](https://drive.google.com/file/d/1VHPxLjN15btq6yDqWv7zH7Z1qHl9zVR0/view?usp=sharing)
+- NASAFancy jupyter notebook [link](./NASAFancy.ipynb)
 
 ## Dataset
 
--OpenCovid-Perú (Database of covid-19 status in peru)
--waqi.info (World Air Pollution: Real-time Air Quality Index)
--OpenAQ (https://openaq.org/#/)
+- OpenCovid-Perú (Database of covid-19 status in peru)
+- waqi.info (World Air Pollution: Real-time Air Quality Index)
+- OpenAQ (https://openaq.org/#/)
 
 ## Future improvements
 
@@ -147,14 +147,14 @@ In light of this, we propose a demographic layer in which, depending on the dail
 
 ## Resources
 
--E. E. Félix-Arellano, A. Schilmann, M. Hurtado-Díaz, J. L. Texcalac-Sangrador, and H. Riojas-Rodríguez, “Revisión rápida: contaminación del aire y morbimortalidad por Covid-19,” salud publica mex, vol. 62, no. 5, pp. 582–589, Sep. 2020.
--M. V. Beusekon,  Apr 12 and 2021, “Previous COVID-19 may cut risk of reinfection 84%,” CIDRAP. https://www.cidrap.umn.edu/news-perspective/2021/04/previous-covid-19-may-cut-risk-reinfection-84 (accessed Oct. 02, 2021).
--M. V. Beusekon, Jul 22 and 2021, “Study: 2 COVID vaccine doses much more effective than 1 against Delta,” CIDRAP. https://www.cidrap.umn.edu/news-perspective/2021/07/study-2-covid-vaccine-doses-much-more-effective-1-against-delta (accessed Oct. 02, 2021).
--M. Rochabrun and R. Liu, “Peru study finds Sinopharm COVID vaccine 50.4% effective against infections,” Reuters, Aug. 13, 2021. Accessed: Oct. 02, 2021. [Online]. Available: https://www.reuters.com/world/americas/peru-study-finds-sinopharm-covid-vaccine-504-effective-against-infections-2021-08-13/
--“Coronavirus: vacunas contra la COVID-19 en el Perú.” https://www.gob.pe/11571-coronavirus-vacunas-contra-la-covid-19-en-el-peru (accessed Oct. 02, 2021).
--“Lo que debe saber sobre la vacuna BNT162b2 de Pfizer-BioNTech contra la COVID-19.” https://www.who.int/es/news-room/feature-stories/detail/who-can-take-the-pfizer-biontech-covid-19--vaccine (accessed Oct. 02, 2021).
--“La vacuna de Oxford/AstraZeneca contra la COVID-19: lo que debe saber.” https://www.who.int/es/news-room/feature-stories/detail/the-oxford-astrazeneca-covid-19-vaccine-what-you-need-to-know (accessed Oct. 02, 2021).
--“Todo lo que se debe saber sobre la vacuna de Sinopharm contra la COVID-19.” https://www.who.int/es/news-room/feature-stories/detail/the-sinopharm-covid-19-vaccine-what-you-need-to-know (accessed Oct. 02, 2021).
+- E. E. Félix-Arellano, A. Schilmann, M. Hurtado-Díaz, J. L. Texcalac-Sangrador, and H. Riojas-Rodríguez, “Revisión rápida: contaminación del aire y morbimortalidad por Covid-19,” salud publica mex, vol. 62, no. 5, pp. 582–589, Sep. 2020.
+- M. V. Beusekon,  Apr 12 and 2021, “Previous COVID-19 may cut risk of reinfection 84%,” CIDRAP. https://www.cidrap.umn.edu/news-perspective/2021/04/previous-covid-19-may-cut-risk-reinfection-84 (accessed Oct. 02, 2021).
+- M. V. Beusekon, Jul 22 and 2021, “Study: 2 COVID vaccine doses much more effective than 1 against Delta,” CIDRAP. https://www.cidrap.umn.edu/news-perspective/2021/07/study-2-covid-vaccine-doses-much-more-effective-1-against-delta (accessed Oct. 02, 2021).
+- M. Rochabrun and R. Liu, “Peru study finds Sinopharm COVID vaccine 50.4% effective against infections,” Reuters, Aug. 13, 2021. Accessed: Oct. 02, 2021. [Online]. Available: https://www.reuters.com/world/americas/peru-study-finds-sinopharm-covid-vaccine-504-effective-against-infections-2021-08-13/
+- “Coronavirus: vacunas contra la COVID-19 en el Perú.” https://www.gob.pe/11571-coronavirus-vacunas-contra-la-covid-19-en-el-peru (accessed Oct. 02, 2021).
+- “Lo que debe saber sobre la vacuna BNT162b2 de Pfizer-BioNTech contra la COVID-19.” https://www.who.int/es/news-room/feature-stories/detail/who-can-take-the-pfizer-biontech-covid-19--vaccine (accessed Oct. 02, 2021).
+- “La vacuna de Oxford/AstraZeneca contra la COVID-19: lo que debe saber.” https://www.who.int/es/news-room/feature-stories/detail/the-oxford-astrazeneca-covid-19-vaccine-what-you-need-to-know (accessed Oct. 02, 2021).
+- “Todo lo que se debe saber sobre la vacuna de Sinopharm contra la COVID-19.” https://www.who.int/es/news-room/feature-stories/detail/the-sinopharm-covid-19-vaccine-what-you-need-to-know (accessed Oct. 02, 2021).
 
 ## Authors
 -Mario Rios
