@@ -7,7 +7,7 @@ Nasa Space Apps Challenge. A code to calculate the infection risk of COVID 19.
 COVID Tracker is an application that predicts individualized and geolocated COVID-19 risk infection in real time. This mobile application is being developed mainly to collect and process data related to Sars Cov2 from the Peruvian regions. Therefore, the information used comes from specialized databases on the subject. The novel model for calculating the percentage risk of infection is based on a multilayer approach with epidemiological, environmental and other variables (such as reinfection rate and vaccination status), supported by the most recent literature. The OpenCovid Peru web portal is being used to obtain data on the status of the pandemic in each region of the country and the Waki portal to obtain data on environmental variables. After obtaining the information of the current location of the user through GPS or from a manual configuration, the application calculates the risk taking into account the variables already mentioned. Based on this, personalized messages for prevention are displayed in relation to a certain range of risk (very low, low, moderate, high and very high). This application will prevent massive contagion and generate a culture of more responsible prevention, since it provides biosafety measures according to the current situation of the user and their environment. In the long term, COVID Tracker can be used in other parts of the world, as long as there is enough data updated daily to perform the calculations.
 
 ## How COVID Tracker Works
-Open Covid Peru, Waqi and important personal information (previous infection and vaccination) help us to determinate a multi-variable model for calculating the Covid 19 infection risk factor. To get the data from the mentioned databases we are using APIs which provide us real time updates. Inside the app, the user gives permission to use GPS feature or sets an specific location. Then, a form containing the personal information is filled. With this information the app shows the user the risk factor which is divided in five risks levels: very low (0 \% - 20 \%), low ( 20 \% - 40 \%), moderate (40 \% - 60 \%), high \[ 60 \% - 80 \% > and very high \[ 80 \%, 100 \% ]. Finally, according to the ranges some messages that guide social awareness and health security are displayed."
+Open Covid Peru, Waqi and important personal information (previous infection and vaccination) help us to determinate a multi-variable model for calculating the Covid 19 infection risk factor. To get the data from the mentioned databases we are using APIs which provide us real time updates. Inside the app, the user gives permission to use GPS feature or sets an specific location. Then, a form containing the personal information is filled. With this information the app shows the user the risk factor which is divided in five risks levels: very low 0 \% - 20 \%), low ( 20 \% - 40 \%), moderate (40 \% - 60 \%), high (60 \% - 80 \%) and very high (80 \%, 100 \%). Finally, according to the ranges some messages that guide social awareness and health security are displayed."
 
 ## Our Novel Model
 Our model is composed by 3 layers: COVID epidemiological context, environmental context and vaccination and reinfection factor.
@@ -17,20 +17,20 @@ Our model is composed by 3 layers: COVID epidemiological context, environmental 
 ### Epidemiological layer
 Open Covid Peru offers six epidemiological factors:
 
-regions.avgTest = Quantity of applied COVID tests regions.positivity = Quantity of positive results for each one hundred tests. regions.population = Quantity of inhabitants.
-regions.camasCovid = Percentage of Covid occupied hospital beds until Sunday of this same week.
-regions.uci = Percentage of ICU occupied hospital beds until Sunday of this same week.
-Weekly confirmed cases = Quantity of people with COVID positive results in the week = regions.positiveCases_100 * regions.population / 100000
-Weekly deaths = Quantity of people with comfirmed COVID deaths in the week = regions.fall_100 * regions.population / 100000
+- regions.avgTest = Quantity of applied COVID tests regions.positivity = Quantity of positive results for each one hundred tests. regions.population - Quantity of inhabitants.
+- regions.camasCovid = Percentage of Covid occupied hospital beds until Sunday of this same week.
+- regions.uci = Percentage of ICU occupied hospital beds until Sunday of this same week.
+- Weekly confirmed cases = Quantity of people with COVID positive results in the week = regions.positiveCases_100 * regions.population / 100000
+- Weekly deaths = Quantity of people with comfirmed COVID deaths in the week = regions.fall_100 * regions.population / 100000
 
 In order to ensure a relative scale, we divided two variables by the population, and renamed Open Covid Peru variables with more descriptive names:
 
-confirmedDeaths100k = Quantity of confirmed COVID deaths for each one hundred thousand people.
-confirmedCases100k = Quantity of positive COVID tests for each one hundred thousand tests.
-appliedTests100k = Quantity of applied COVID tests for each one hundred thousand people.
-positivityRate = Rate of positive COVID tests by total applied COVID tests of this same week.
-bedsOccupiedPercentage = Percentage of Covid occupied hospital beds until Sunday of this same week.
-bedsUCIOccupiedPercentage = Percentage of ICU occupied hospital beds until Sunday of this same week.
+- confirmedDeaths100k = Quantity of confirmed COVID deaths for each one hundred thousand people.
+- confirmedCases100k = Quantity of positive COVID tests for each one hundred thousand tests.
+- appliedTests100k = Quantity of applied COVID tests for each one hundred thousand people.
+- positivityRate = Rate of positive COVID tests by total applied COVID tests of this same week.
+- bedsOccupiedPercentage = Percentage of Covid occupied hospital beds until Sunday of this same week.
+- bedsUCIOccupiedPercentage = Percentage of ICU occupied hospital beds until Sunday of this same week.
 
 To analize the relation between the variables we built heat maps and pairplots in a regional context. Even though at the beginning it was planned to take a national approach, the correlations were not significant to make predictions. It is shown in the following picture.
 
