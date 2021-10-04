@@ -12,7 +12,7 @@ Open Covid Peru, Waqi and important personal information (previous infection and
 ## Our Novel Model
 Our model is composed by 3 layers: COVID epidemiological context, environmental context and vaccination and reinfection factor.
 
-![logframe](Imagenes del modelo simplificado)
+![logframe](https://github.com/morphisjustfun/NASA_CHALLENGE_UTILS/blob/master/images/readME/MODEL.jpeg)
 
 ### Epidemiological layer
 Open Covid Peru offers six epidemiological factors:
@@ -38,13 +38,13 @@ To analize the relation between the variables we built heat maps and pairplots i
 
 In the preuvian context the measure of confirmed cases were not rigorous, then to base our model in this variable was not appropiate at all. For that reason we better took a robust variable: confirmedDeaths100k. First of all, the number of reported deaths in a day is unique and there are not duplicated data. Something that would happen with covid tests which can be applied many times in a day for only one person. Second, the number of reported deaths in a day reveals the impact of covid status 14 days ago. As it is known that the time for the covid19 to incubate is 14 days. Third, the 'confirmedDeaths100k' variable has a  significant correlation (R greater than 0.6) with the other variables (confirmedCases100k, appliedTests100k, positivityRate, bedsOccupiedPercentage, bedsUCIOccupiedPercentage) and we noticed that it was the best variable to explain the others in the model. In that sense, it is possible to take into consideration the confirmed deaths for each 100k people variable (*confirmedDeaths100k*) as a basis to make predictions of the risk in the epidemiological layer of the model. 
 
-![logframe](Imagenes de ciertas regiones)
+![logframe](https://github.com/morphisjustfun/NASA_CHALLENGE_UTILS/blob/master/images/readME/amazonasPLOTS.png)
 
 
 To establish risk scales we contextualized the HHS's (U.S. Department of Health and Human Services) model 
 
 
-![logframe](Imagenes de la tabla)
+![logframe](https://github.com/morphisjustfun/NASA_CHALLENGE_UTILS/blob/master/images/readME/HHS_Criteria.JPG)
 
 
 Then we obtained the weights of the epidemiological variables through the correlations that they had between confirmedDeaths100k variable with data since February 7th, 2021 (the first day of report in Open Covid Peru) until the day of the user consult. Finally, with the weights of the variable and its risk scales we can obtain a general average of the epidemiological layer.
