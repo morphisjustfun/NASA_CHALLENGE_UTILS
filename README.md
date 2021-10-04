@@ -157,8 +157,8 @@ In light of this, we propose a demographic layer in which, depending on the dail
 - “Todo lo que se debe saber sobre la vacuna de Sinopharm contra la COVID-19.” https://www.who.int/es/news-room/feature-stories/detail/the-sinopharm-covid-19-vaccine-what-you-need-to-know (accessed Oct. 02, 2021).
 
 ## Authors
--Mario Rios
--Noemi Ramirez
--Cesar Otárola
--Pedro Toledo
--Jairo Narro
+- Mario Rios
+- Noemi Ramirez
+- Cesar Otárola
+- Pedro Toledo
+- Jairo Narro
